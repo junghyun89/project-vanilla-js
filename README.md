@@ -1,1 +1,3 @@
-# js-image-editor-clone
+- HTML
+- CSS
+- JS
