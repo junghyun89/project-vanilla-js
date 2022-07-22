@@ -1,1 +1,3 @@
-# js-guessing-word-clone
+- HTML
+- CSS
+- JS
