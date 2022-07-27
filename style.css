@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #4285f4;
+}
+
+.wrapper {
+  width: 370px;
+  margin: 130px auto 0;
+}
+
+.options li,
+.select-btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.select-btn {
+  background-color: #fff;
+  height: 65px;
+  padding: 0 20px;
+  border-radius: 7px;
+  font-size: 22px;
+  justify-content: space-between;
+}
+
+.select-btn i {
+  font-size: 31px;
+  transition: transform 0.3s linear;
+}
+
+.wrapper.active .select-btn i {
+  transform: rotateX(180deg);
+}
+
+.content {
+  background: #fff;
+  margin-top: 15px;
+  padding: 20px;
+  border-radius: 7px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.wrapper.active .content {
+  opacity: 1;
+}
+
+.search {
+  position: relative
+}
+
+.search i {
+  line-height: 53px;
+  left: 15px;
+  position: absolute;
+  color: #999;
+  font-size: 18px;
+}
+
+.search input {
+  height: 53px;
+  width: 100%;
+  font-size: 17px;
+  padding: 0 15px 0 43px;
+  outline: none;
+  border: 1px solid #b3b3b3;
+  border-radius: 5px;
+}
+
+.options {
+  margin-top: 10px;
+  max-height: 250px;
+  overflow-y: auto;
+  padding-right: 7px;
+}
+
+.options::-webkit-scrollbar {
+  width: 7px;
+}
+.options::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+.options::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 25px;
+}
+
+.options li {
+  height: 50px;
+  border-radius: 5px;
+  padding: 0 13px;
+  font-size: 21px;
+}
+
+.options li:hover, li.selected {
+  background: #f2f2f2;
+}
