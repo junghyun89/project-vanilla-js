@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #5372F0;
+}
+
+.wrapper {
+  width: 490px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 18px 25px 20px;
+}
+
+.title, li, li i, .details {
+  display: flex;
+  align-items: center;
+}
+
+.title i {
+  font-size: 20px;
+}
+
+.title h2 {
+  font-size: 21px;
+  font-weight: 700;
+  margin-left: 6px;
+}
+
+.content {
+  margin: 10px 0;
+}
+
+.content p {
+  font-size: 15px;
+}
+
+.content ul {
+  display: flex;
+  margin: 12px 0;
+  border: 1px solid #a6a6a6;
+  padding: 7px;
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+
+.content ul li {
+  list-style: none;
+  background: #f2f2f2;
+  padding: 5px 8px 5px 10px;
+  margin: 4px 3px;
+  border-radius: 5px;
+  border: 1px solid #e3d1e1;
+}
+
+.content ul li i {
+  height: 20px;
+  width: 20px;
+  background: #dfdfdf;
+  font-size: 12px;
+  border-radius: 50%;
+  margin-left: 8px;
+  justify-content: center;
+  color: #808080;
+  cursor: pointer;
+}
+
+.content ul input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.details {
+  justify-content: space-between;
+}
+
+.details button {
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #5372F0;
+  padding: 9px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
