@@ -1,0 +1,1 @@
+# js-detect-adblock-clone
