@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <div class="select-box">
+    <header>Tic Tac Toe</header>
+    <div class="content">
+      <div class="title">Select which you want to be?</div>
+      <div class="options">
+        <button class="playerX">Player (X)</button>
+        <button class="playerO">Player (O)</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="play-board">
+    <div class="details">
+      <div class="players">
+        <span class="Xturn">X's Turn</span>
+        <span class="Oturn">O's Turn</span>
+        <div class="slider"></div>
+      </div>
+    </div>
+    <div class="play-area"></div>
+  </div>
+
+  <div class="result-box">
+    <div class="won-text">_</div>
+    <div class="btn">
+      <button>Replay</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
