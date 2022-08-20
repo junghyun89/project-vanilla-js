@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  user-select: none;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #a7ffeb;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.card {
+  background: white;
+  height: 380px;
+  width: 300px;
+  margin: auto;
+  border-radius: 5px;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+}
+
+.content {
+  color: #202020;
+  text-align: center;
+  transform-style: preserve-3d;
+}
+
+.user {
+  height: 100px;
+  width: 100px;
+  background: #33ffcf;
+  border: 1px solid #1affc9;
+  border-radius: 50%;
+  margin: 10px auto;
+  transform:  translateZ(50px);
+}
+
+.user .fa-user {
+  color: white;
+  font-size: 40px;
+  line-height: 100px;
+}
+
+.content header {
+  margin: 20px 0;
+  font-size: 32px;
+  font-weight: 600;
+  transform:  translateZ(50px);
+}
+
+.follow-me {
+  font-size: 23px;
+  font-weight: 600;
+  transform:  translateZ(50px);
+}
+
+.icons {
+  margin: 20px 0 10px 0;
+  transform:  translateZ(50px);
+}
+
+.icons a {
+  margin: 0 4px;
+}
+
+.icons a span {
+  height: 45px;
+  width: 45px;
+  background-color: #33ffcf;
+  border: 1px solid #1affc9;
+  line-height: 44px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+}
