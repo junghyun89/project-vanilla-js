@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 1;
+  height: 85px;
+  width: 100%;
+  border-bottom: 1px solid silver;
+}
+
+nav header {
+  line-height: 85px;
+  padding: 0 20px;
+  font-size: 30px;
+  color: #0d0d0d;
+  font-family: 'Gugi', cursive;
+  font-weight: 800;
+}
+
+nav header span {
+  color: indigo;
+  font-family: 'Gugi', cursive;
+}
+
+.scroll-line {
+  height: 2px;
+  width: 0%;
+  background: indigo;
+}
+
+.content {
+  margin-top: 90px;
+  padding: 20px 40px;
+}
+
+.content h1 {
+  font-size: 45px;
+}
+
+.content p {
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+.content h1 {
+  font-size: 35px;
+}
+
+.content ul {
+  padding-left: 30px;
+}
+
+ul li {
+  font-size: 20px;
+}
