@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 0 16px;
+}
+
+.button {
+  width: 450px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.1),
+              0 10px 10px rgba(0,0,0,0.2);
+}
+
+.showBtn {
+  background: #2573a7;
+  padding: 15px 16px;
+  font-size: 28px;
+  color: #fff;
+  border: 1px solid #206592;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+}
+
+.showBtn.inactive {
+  border: none;
+  cursor: default;
+  border-radius: 5px 5px 0 0 ;
+}
+
+form {
+  display: flex;
+  flex-flow: row nowrap;
+  background: #1c567d;
+  border-radius: 5px;
+  transition: .4s ease-in-out;
+  height: 0;
+  overflow: hidden;
+}
+
+form.active {
+  padding: 20px;
+  height: 88px;
+  border-radius: 0 0 5px 5px;
+}
+
+form input {
+  padding: 12px;
+  border-radius: 3px;
+  flex: 1;
+  outline: none;
+  font-size: 18px;
+  border: 1px solid transparent;
+  transition: 0.4s;
+}
+
+form input:focus {
+  border: 1px solid #206592;
+}
+
+form button {
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  padding: 0 15px;
+  margin-left: 20px;
+  font-size: 17px;
+  background: linear-gradient(#2980b9, #206592);
+  border: 1px solid #1c567d;
+  border-radius: 3px;
+}
+
+form button:hover {
+  background: linear-gradient(#2e90d1, #206592);
+}
+
+@media (max-width: 600px) {
+  form {
+    flex-flow: row wrap;
+  }
+
+  form input, form button {
+    padding: 14px!important;
+    margin: 0px!important;
+    flex: 100%;
+  }
+
+  form button {
+    margin-top: 14px!important;
+    font-size: 20px;
+  }
+
+  form.active {
+    height: 180px;
+  }
+}
