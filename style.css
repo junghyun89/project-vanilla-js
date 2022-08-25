@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #17A2B8;
+}
+
+.wrapper {
+  width: 450px;
+  border-radius: 7px;
+  background: #fff;
+  padding: 30px 25px 40px;
+}
+
+.wrapper :where(textarea, input, select, button) {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.wrapper textarea {
+  height: 270px;
+  resize: none;
+  padding: 8px 13px;
+  border: 1px solid #ccc;
+}
+
+.file-options {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.option {
+  width: calc(100% / 2 - 8px);
+}
+
+.option :where(input, .select-menu) {
+  height: 50px;
+  padding: 0 15px;
+  margin-top: 6px;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+}
+
+.select-menu select {
+  height: 50px;
+  background: none;
+}
+
+.save-btn {
+  color: #fff;
+  margin-top: 20px;
+  padding: 16px 0;
+  cursor: pointer;
+  background: #17A2B8;
+  font-size: 17px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+textarea:valid ~ .save-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
