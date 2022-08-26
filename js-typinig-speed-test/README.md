@@ -1,0 +1,1 @@
+# js-typinig-speed-test-clone
