@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gugi', cursive;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #e8effd 0%, #d6e3f5 100%);
+}
+
+.text {
+  font-size: 120px;
+  font-weight: 900;
+  background: url("https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif") repeat;
+  background-position: 40% 50%;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: -2px;
+  text-shadow: 3px 3px 4px rgba(0,0,0,.2);
+  user-select: none;
+}
