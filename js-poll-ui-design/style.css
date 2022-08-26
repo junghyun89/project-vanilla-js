@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #6665ee;
+}
+
+.wrapper {
+  background: #fff;
+  border-radius: 15px;
+  max-width: 380px;
+  width: 100%;
+  padding: 25px;
+}
+
+.wrapper header {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.poll-area {
+  margin: 20px 0 15px 0;
+}
+
+.poll-area label {
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 2px solid #e6e6e6;
+  padding: 8px 15px;
+  transition: all 0.2s ease;
+}
+
+label.selected {
+  border-color: #6665ee;
+}
+
+label .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row .column {
+  display: flex;
+  align-items: center;
+}
+
+.row .circle {
+  height: 19px;
+  width: 19px;
+  display: block;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+}
+
+label.selected .row .circle {
+  border-color: #6665ee;
+}
+
+.row .circle::after {
+  content: "";
+  position: absolute;
+  height: 11px;
+  width: 11px;
+  top: 2px;
+  left: 2px;
+  border-radius: inherit;
+  background: #ccc;
+  display: none;
+}
+
+label.selected .row .circle::after {
+  display: block;
+  background: #6665ee!important;
+}
+
+label:hover .row .circle::after {
+  display: block;
+  background: #e6e6e6;
+}
+
+.row span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.percent {
+  display: none;
+}
+
+.progress {
+  height: 7px;
+  width: 100%;
+  border-radius: 30px;
+  margin: 8px 0 3px 0;
+  background: #f0f0f0;
+  position: relative;
+  display: none;
+}
+
+.progress::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: calc(1% * var(--w));
+  background: #ccc;
+  border-radius: inherit;
+}
+
+label.selected .progress::after {
+  background: #6665ee;
+}
+
+label.selectall :is(.percent, .progress) {
+  display: block;
+}
