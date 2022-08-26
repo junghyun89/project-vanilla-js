@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #efefef;
+}
+
+.wrapper {
+  position: relative;
+  height: 500px;
+  width: 750px;
+  background: #fff;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
+  border: 7px solid #fff;
+  overflow: hidden;
+}
+
+.images {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.img-1 {
+  height: 100%;
+  width: 100%;
+  background: url('images/0.jpg') no-repeat;
+  background-size: cover;
+}
+
+.img-2 {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  filter: blur(5px);
+  background: url('images/0.jpg') no-repeat;
+  background-size: cover;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.slider input {
+  width: 100%;
+  outline: none;
+  -webkit-appearance: none;
+  background: none;
+}
+
+.slider input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 486px;
+  width: 3px;
+  background: none;
+  cursor: col-resize;
+}
+
+.drag-line {
+  width: 3px;
+  height: 486px;
+  position: absolute;
+  left: 49.85%;
+  pointer-events: none;
+}
+
+.drag-line::before,
+.drag-line::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 222px;
+  background: #fff;
+}
+
+.drag-line::before {
+  top: 0;
+}
+
+.drag-line::after {
+  bottom: 0;
+}
+
+.drag-line span {
+  height: 42px;
+  width: 42px;
+  border: 3px solid #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.drag-line span::before,
+.drag-line span::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  border: 10px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.drag-line span::before {
+  left: 40%;
+  border-left-color: #fff;
+}
+
+.drag-line span::after {
+  left: 60%;
+  border-top-color: #fff;
+}
