@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #151515;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.percent {
+  color: #999;
+  font-size: 100px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.text {
+  position: absolute;
+  left: 160px;
+  color: #fdb5ca;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 21px;
+  display: none;
+}
+
+.text-blink {
+  animation: blink .7s ease-in-out .1s;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.progress-bar {
+  width: 406px;
+  height: 21px;
+  background: #111;
+  border-radius: 13px;
+  padding: 3px;
+}
+
+.progress {
+  width: 0%;
+  height: 15px;
+  background: #f60d54;
+  border-radius: 13px;
+}
